@@ -6,6 +6,7 @@ st.caption("ask anything about collage information...")
 st.caption("created by akshaya")
 
 mykey = st.secrets("GROQ_API_KEY")
+@st.cache_resource
 def initiate_rag():
   return load_base("01_College_Information.pdf")
   index,embed_model,chunks = initiate_rag()
