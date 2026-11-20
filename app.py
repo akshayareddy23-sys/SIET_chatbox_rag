@@ -22,7 +22,7 @@ def initiate_rag():
             st.write(question)
           with st.chat_message("assistant"):
             with st.spinner("ask rag for answer...."):
-              answer = ask_rag(question,embed_model,chunks,index,api_key = mykey,num_chunks)
+              answer = ask_rag(question,embed_model,chunks,index,api_key = mykey)
               st.write(answer)
               if st.button("clear chat")
               st.session_state.chat_hist =[]
