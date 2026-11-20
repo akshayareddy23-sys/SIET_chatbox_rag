@@ -16,7 +16,7 @@ def initiate_rag():
         st.write(qa["content"])
         question = st.chat_input("ask anything about SIET collage...")
         if question:
-          st.session_state.chat_hist.append({"role":"user",content=question})
+          st.session_state.chat_hist.append({"role":"user","content":question})
           with st.chat_message("user"):
           st.write(question)
           with st.chat_message("assistant"):
