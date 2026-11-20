@@ -1,1 +1,6 @@
+streamlit
+sentence_transformers
+faiss
+groq
+numpy
 
