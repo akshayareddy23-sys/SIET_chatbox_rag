@@ -25,7 +25,7 @@ def create_chunks(full_text,chunksize=500,overlap=100):
     if chunk.strip():
       chunks.append(chunk)
       start = end - overlap #500-100=400
-    return chunks 
+   return chunks 
 
     
     #embedding
@@ -45,7 +45,7 @@ def create_chunks(full_text,chunksize=500,overlap=100):
        full_text = load_pdf(pdf_path)
        chunks = create_chunks(full_text)
        embed_model,index = build_vector(chunks)
-       return embeded_model,chunks,index
+     return embeded_model,chunks,index
 
        
        #retrive 
