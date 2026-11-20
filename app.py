@@ -24,7 +24,7 @@ def initiate_rag():
             with st.spinner("ask rag for answer...."):
               answer = ask_rag(question,embed_model,chunks,index,api_key = mykey)
               st.write(answer)
-              if st.button("clear chat")
+              if st.button("clear chat"):
               st.session_state.chat_hist =[]
               st.rerun
  
