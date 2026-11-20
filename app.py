@@ -9,7 +9,9 @@ mykey = st.secrets("GROQ_API_KEY")
 
   def initiate_rag():
     return load_base("01_College_Information.pdf")
+    
   index,embed_model,chunks = initiate_rag()
+
   if "chat_hist" not in st.session_state:
    st.session_state.chat_hist =[]
 
